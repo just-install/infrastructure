@@ -1,0 +1,18 @@
+language: minimal
+
+branches:
+  only:
+  - master
+
+install: 
+  - wget -O dnscontrol https://github.com/StackExchange/dnscontrol/releases/download/v0.2.6/dnscontrol-Linux
+  - chmod +x dnscontrol
+
+script:
+  - ./dnscontrol preview
+
+deploy:
+  - provider: script
+    script: ./dnscontrol push
+    on:
+      branch: master
