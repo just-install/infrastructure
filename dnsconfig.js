@@ -1,5 +1,5 @@
 var OVH = NewDnsProvider('ovh','OVH');
-var CLOUDFLARE = NewRegistrar('cloudflare', 'CLOUDFLARE');
+var CLOUDFLARE = NewRegistrar('cloudflare', 'CLOUDFLAREAPI');
 var REG_NONE = NewRegistrar('none', 'NONE');
 
 D("just-install.it", REG_NONE,
