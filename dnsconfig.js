@@ -1,4 +1,3 @@
-var OVH = NewDnsProvider('ovh','OVH');
 var CLOUDFLARE = NewDnsProvider('cloudflare', 'CLOUDFLAREAPI');
 var REG_NONE = NewRegistrar('none', 'NONE');
 
